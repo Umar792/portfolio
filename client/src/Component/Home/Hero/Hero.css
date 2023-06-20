@@ -1,0 +1,389 @@
+.Hero_section{
+    width: 100%;
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+    /* position: relative; */
+    border-bottom: 1px solid black;
+}
+.Hero_section h1{
+  font-size: 35px;
+  font-weight: bold;
+}
+.Hero_child{
+    max-width: 600px;
+    padding: 5px 10px;
+}
+
+.Hero_section font{
+    color: #FF014F;
+}
+.auto_type{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 8px;
+}
+.auto_type {
+    margin-bottom: 13px;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: serif;
+}
+.Hero_section .hero_p1{
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+    font-family: sans-serif;
+    color: gray;
+}
+.Hero_section h1{
+    margin-bottom: 10px;
+
+}
+.discription_hero{
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+    justify-content: start;
+    color: #AFCFDE;
+}
+.right_Hero img{
+    width: 300px;
+    animation: moveUpDown 3s infinite linear;
+}
+@keyframes moveUpDown {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(30px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+
+  /* ----------------- Hero_Glass_section  */
+  .Hero_Glass_section{
+    position: absolute;
+    top: 200px;
+    left: 100px;
+    width: 200px;
+    height: 200px;
+    /* From https://css.glass */
+background: rgba(255, 255, 255, 0.2);
+border-radius: 100%;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(255, 255, 255, 0.1);
+z-index: -1;
+animation: moveBox 15s infinite;
+  }
+  .Hero_Glass_section2{
+    position: absolute;
+    top: 200px;
+    left: 30%;
+    width: 200px;
+    height: 200px;
+    /* From https://css.glass */
+background: rgba(255, 255, 255, 0.2);
+border-radius: 100%;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(255, 255, 255, 0.1);
+z-index: -1;
+animation: moveBox 25s infinite;
+  }
+  .Hero_Glass_section3{
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    width: 100px;
+    height: 100px;
+    /* From https://css.glass */
+background: rgba(255, 255, 255, 0.2);
+border-radius: 100%;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(255, 255, 255, 0.1);
+z-index: -1;
+animation: moveBox3 25s infinite;
+  }
+  @keyframes moveBox3 {
+    0% {
+        transform: translateX(200px) translateY(0px);
+      }
+      25% {
+        transform: translateX(0) translateY(400px);
+      }
+      50% {
+        transform: translateX(-300px) translateY(0);
+      }
+      75% {
+        transform: translateX(0) translateY(300px);
+      }
+      100% {
+        transform: translateX() translateY(-50px);
+      }
+  }
+  @keyframes moveBox {
+    0% {
+        transform: translateX(0) translateY(0);
+      }
+      25% {
+        transform: translateX(200px) translateY(100px);
+      }
+      50% {
+        transform: translateX(200px) translateY(-200px);
+      }
+      75% {
+        transform: translateX(200px) translateY(-200px);
+      }
+      100% {
+        transform: translateX(0) translateY(0);
+      }
+  }
+
+
+  /* ---------------- Hero_Section_Icons  */
+  .Hero_Section_Icons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    gap: 20px;
+  }
+  .Hero_icon_child{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .Icons_left{
+    flex-direction: column;
+  }
+  .Hero_Section_Icons p{
+    margin: 10px 5px;
+    color: #AFCFDE;
+    font-weight: bold;
+  }
+  .Icons_right{
+  }
+  .Hero_Icon{
+    background-color: #191B1E;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 5px;
+    --tw-bg-opacity: 0.25;
+    --tw-text-opacity: 1;
+    --tw-shadow: 10px 10px 19px #1c1e22,-10px -10px 19px #262a2e;
+    --tw-shadow-colored: 10px 10px 19px var(--tw-shadow-color),-10px -10px 19px var(--tw-shadow-color);
+    align-items: center;
+    background-color: rgb(0 0 0/var(--tw-bg-opacity));
+    border-radius: 0.375rem;
+    box-shadow: 0 0 #0000,0 0 #0000,var(--tw-shadow);
+    box-shadow: var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow);
+    color: rgb(229 231 235/var(--tw-text-opacity));
+    cursor: pointer;
+    display: inline-flex;
+    font-size: 1.25rem;
+    height: 4rem;
+    justify-content: center;
+    line-height: 1.75rem;
+    transition-duration: .3s;
+    transition-property: all;
+    transition-timing-function: cubic-bezier(.4,0,.2,1);
+    width: 4rem;
+  }
+
+  .Hero_Icon:hover{
+    color: #FF014F;
+    transform: translateY(-5px);
+    animation:transform .1s linear ;
+  }
+
+
+
+
+  /* ------------------ media  */
+  @media(max-width : 912px){
+    .Hero_child{
+        max-width: 500px;
+    }
+    
+  }
+
+  @media(max-width : 850px){
+    .Hero_child{
+        max-width:  500px;
+    }
+    .Hero_section{
+        gap: 30px;
+    }
+    .Hero_Section_Icons{
+       display: grid;
+       grid-template-columns: 1fr;
+       gap: 10px;
+      }
+  }
+
+  @media(max-width : 800px){
+    
+    .Hero_section{
+        height: auto;
+        padding: 20px 0px;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .Hero_child{
+        max-width: 100% !important;
+        padding: 10px 20px;
+    }
+    .Hero_Section_Icons{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 50px;
+    }
+    .right_Hero{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .right_Hero img{
+        width: 80%;
+    
+    }
+}
+
+@media(max-width : 588px){
+    .Hero_Section_Icons{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+       }
+       .right_Hero{
+        margin-top: 20px;
+       }
+       .right_Hero img{
+        width: 100%;
+        padding: 50px;
+       }
+       .Hero_child{
+       }
+       .Hero_Glass_section{
+        width: 150px;
+        height: 150px;
+        left: 0;
+       }
+       .Hero_Glass_section2{
+        width: 150px;
+        height: 150px;
+        left: 0;
+       }
+       .Hero_Glass_section3{
+        width: 80px;
+        height: 80px;
+       }
+  
+  @keyframes moveBox3 {
+    0% {
+        transform: translateX(100px) translateY(0px);
+      }
+      25% {
+        transform: translateX(0) translateY(200px);
+      }
+      50% {
+        transform: translateX(-200px) translateY(0);
+      }
+      75% {
+        transform: translateX(0) translateY(200px);
+      }
+      100% {
+        transform: translateX() translateY(-50px);
+      }
+  }
+  @keyframes moveBox {
+    0% {
+        transform: translateX(0) translateY(0);
+      }
+      25% {
+        transform: translateX(200px) translateY(100px);
+      }
+      50% {
+        transform: translateX(200px) translateY(-200px);
+      }
+      75% {
+        transform: translateX(200px) translateY(-200px);
+      }
+      100% {
+        transform: translateX(0) translateY(0);
+      }
+  }
+
+}
+
+
+@media(max-width : 400px){
+   
+    .Hero_child h1{
+        font-size: 28px;
+    }
+    .auto_type p{
+        font-size: 20px;
+    }
+    .Hero_Glass_section3{
+        width: 80px;
+        height: 80px;
+        left: 0;
+       }
+    @keyframes moveBox3 {
+        0% {
+            transform: translateX(100px) translateY(0px);
+          }
+          25% {
+            transform: translateX(0) translateY(200px);
+          }
+          50% {
+            transform: translateX(-100px) translateY(0);
+          }
+          75% {
+            transform: translateX(0) translateY(100px);
+          }
+          100% {
+            transform: translateX() translateY(-50px);
+          }
+      }
+      @keyframes moveBox {
+        0% {
+            transform: translateX(0) translateY(0);
+          }
+          25% {
+            transform: translateX(100px) translateY(50px);
+          }
+          50% {
+            transform: translateX(100px) translateY(-100px);
+          }
+          75% {
+            transform: translateX(100px) translateY(-200px);
+          }
+          100% {
+            transform: translateX(0) translateY(0);
+          }
+      }
+   
+}
+
+
+@media(max-width : 500px){
+    .Hero_icon_child{
+      flex-wrap: wrap;
+      }
+}

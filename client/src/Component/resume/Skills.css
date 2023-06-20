@@ -1,0 +1,10 @@
+.skills_lines{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+@media(max-width : 800px){
+    .skills_lines{
+        flex-direction: column;
+    }
+}
