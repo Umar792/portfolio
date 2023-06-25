@@ -16,7 +16,7 @@ const Navebar = ({select, setSelect}) => {
   return (
     <div className="navebar">
       {/* ------------- right_navebar  */}
-      <div className="Left_Navebar">
+      <div className="Left_Navebar" onClick={()=> setSelect(0)}>
         <img src="./my.png" alt="" />
         <h2>
           M<font>U</font>
@@ -43,10 +43,10 @@ const Navebar = ({select, setSelect}) => {
             <li onClick={()=> setSelect(2)}>Projects</li>
           {/* </NavLink> */}
           {/* <NavLink to="/"> */}
-            <li onClick={()=> setSelect(3)}>Live Projects</li>
+            {/* <li onClick={()=> setSelect(3)}>Live Projects</li> */}
           {/* // </NavLink> */}
           {/* <NavLink to="/"> */}
-            <li onClick={()=> setSelect(4)}>Contact me</li>
+            {/* <li onClick={()=> setSelect(4)}>Contact me</li> */}
           {/* // </NavLink> */}
         </ul>
         {/* <button className="login">Sign-in</button>

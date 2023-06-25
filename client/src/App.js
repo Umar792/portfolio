@@ -5,6 +5,7 @@ import Navebar from "./Component/Navebar/Navebar";
 import Footer from "./Component/Footer/Footer";
 import Hero from "./Component/Home/Hero/Hero";
 import Projects from "./Component/Projects/Projects";
+import About from "./Component/About/About";
 
 const App = () => {
   const [select, setSelect] = useState(0)
@@ -13,6 +14,9 @@ const App = () => {
       <Navebar select={select} setSelect={setSelect} />
       {
         select === 0 ? <Hero /> : null
+      }
+      {
+        select === 1 ? < About /> : null
       }
       {
         select === 2 ? < Projects /> : null
