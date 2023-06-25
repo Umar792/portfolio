@@ -2,7 +2,7 @@ import React from "react";
 import "./Hero.css";
 import Typewriter from "typewriter-effect";
 import {
-  FaFacebookF,
+  
   FaLinkedinIn,
   FaReact,
   FaNodeJs,
@@ -10,6 +10,7 @@ import {
 } from "react-icons/fa";
 import { AiOutlineGithub } from "react-icons/ai";
 import { DiMongodb } from "react-icons/di";
+import { BsWhatsapp } from "react-icons/bs";
 
 const Hero = () => {
   return (
@@ -34,7 +35,7 @@ const Hero = () => {
                   "React.js Developer,",
                   "MERN Stack Developer,",
                   "React-Natvie Developer,",
-                  "Wordpress Developer,",
+                  "Wordpress Designer,",
                 ],
               }}
             />
@@ -54,15 +55,22 @@ const Hero = () => {
               <p>FIND ME IN</p>
             </div>
             <div className="Hero_icon_child">
+            <a href="https://wa.me/03060711509" target="_blank">
               <div className="Hero_Icon">
-                <FaFacebookF />
+                <BsWhatsapp />
               </div>
+              </a>
+              <a href="https://github.com/Umar792" target="_blank">
               <div className="Hero_Icon">
                 <AiOutlineGithub />
               </div>
+              </a>
+              <a href="https://www.linkedin.com/in/muhammad-umar-yousaf-0aa9a722b/" target="_blank">
               <div className="Hero_Icon">
                 <FaLinkedinIn />
               </div>
+              </a>
+              
             </div>
           </div>
           <div className="Icons_right">
