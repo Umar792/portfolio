@@ -71,6 +71,7 @@
     padding: 12px 7px;
     margin: 13px 0px;
     border-bottom: 1px solid gray;
+    cursor: pointer;
 }
 .right_navebar ul li:hover{
     background-color: black;

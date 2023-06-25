@@ -6,7 +6,6 @@
     align-items: center;
     gap: 70px;
     /* position: relative; */
-    border-bottom: 1px solid black;
 }
 .Hero_section h1{
   font-size: 35px;

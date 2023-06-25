@@ -1,11 +1,18 @@
 import React, { useState } from "react";
 import "./Navebar.css";
-import { NavLink } from "react-router-dom";
+// import { NavLink } from "react-router-dom";
 import { RxCross1 } from "react-icons/rx";
 import { BiMenuAltRight } from "react-icons/bi";
 
-const Navebar = () => {
+const Navebar = ({select, setSelect}) => {
   const [shownav, setShowNav] = useState(false);
+
+
+  const navclick = ()=>{
+
+  }
+
+
   return (
     <div className="navebar">
       {/* ------------- right_navebar  */}
@@ -25,25 +32,25 @@ const Navebar = () => {
         }
       >
         <RxCross1 onClick={() => setShowNav(!shownav)} />
-        <ul>
-          <NavLink to="/">
-            <li>Home</li>
-          </NavLink>
-          <NavLink to="/">
-            <li>About</li>
-          </NavLink>
-          <NavLink to="/">
-            <li>Projects</li>
-          </NavLink>
-          <NavLink to="/">
-            <li>Live Projects</li>
-          </NavLink>
-          <NavLink to="/">
-            <li>Contact me</li>
-          </NavLink>
+        <ul onClick={()=> setShowNav(!shownav)}>
+          {/* <NavLink to="/"> */}
+            <li onClick={()=> setSelect(0)}>Home</li>
+          {/* </NavLink> */}
+          {/* <NavLink to="/"> */}
+            <li onClick={()=> setSelect(1)}>About</li>
+          {/* </NavLink> */}
+          {/* <NavLink to="/"> */}
+            <li onClick={()=> setSelect(2)}>Projects</li>
+          {/* </NavLink> */}
+          {/* <NavLink to="/"> */}
+            <li onClick={()=> setSelect(3)}>Live Projects</li>
+          {/* // </NavLink> */}
+          {/* <NavLink to="/"> */}
+            <li onClick={()=> setSelect(4)}>Contact me</li>
+          {/* // </NavLink> */}
         </ul>
-        <button className="login">Sign-in</button>
-        <button className="resgi">Sign-up</button>
+        {/* <button className="login">Sign-in</button>
+        <button className="resgi">Sign-up</button> */}
       </div>
     </div>
   );
